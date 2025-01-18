@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR Studio</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init({
+             publicKey: "kQpR6PWWghU5pMePg",
+           });
+        })();
+     </script>
+     <script src="index.js" defer></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="AIR Studio Logo">
+                AIR Studio
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#partners">Partners</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Transforming Business Through AI</h1>
+            <p>We partner with companies to develop innovative AI solutions and provide expert consulting services</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About AIR Studio</h2>
+            <div class="about-content">
+                <p>AIR Studio is a leading AI research and consulting firm specializing in developing custom AI solutions for businesses. We work closely with our clients to understand their unique challenges and create tailored AI strategies that drive real results.</p>
+                <div class="services">
+                    <div class="service-card">
+                        <h3>AI Development</h3>
+                        <p>Custom AI solution development and implementation</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>AI Consulting</h3>
+                        <p>Strategic guidance and expertise for AI initiatives</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>AI Research</h3>
+                        <p>Cutting-edge research to solve complex problems</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="partners" class="partners">
+            <h2>Our Partners</h2>
+            <div class="partner-grid">
+                <!-- TODO: Add partner logos -->
+                <div class="partner-logo"></div>
+                <div class="partner-logo"></div>
+                <div class="partner-logo"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>AIR Studio</h3>
+                <p>Transforming the future through AI innovation</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
